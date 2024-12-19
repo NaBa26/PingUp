@@ -1,19 +1,20 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import login from './components/login.vue';
+import register from './components/register.vue';
+import home from './components/home.vue';
+import Sidebar from './components/Sidebar.vue';
+import Options from './components/Options.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
+  <main style="display: flex;">
+    <aside style="position:sticky; display: grid; top: 0;">
+      <options />
+    </aside>
+    <aside style="position:sticky; display: grid; top: 0; left: 4%;">
+      <sidebar />
+    </aside>
   </main>
 </template>
 
